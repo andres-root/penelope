@@ -1,0 +1,16 @@
+Requerimientos:
+
+1. Posibilidad de personalizacion de palabra a buscar en twitter
+2. Posibilidad de cambiar tiempo entre cada impresión
+3. Garantizar que ningún tweet esté vacío
+4. Carácteres especiales deben imprimirse como son. (tildes)
+5. Breakline, si la palabra se corta al final de la linea
+6. Encontrar manera para obtener tweets infinitos por día
+7. Tipo de letra parametrizable, similar a la de twitter
+8. Tweet impreso debe ser visualmente similar a un tweet real
+9. Guardar registro de tweets impresos si es posible por penélope
+10. Si no tiene internet imprimir lo siguiente: ¿Donde estás, amor? - Where are you, love?
+
+
+Requerimientos a Experimentar:
+

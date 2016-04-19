@@ -14,7 +14,7 @@ class StreamListener(tweepy.StreamListener):
         if self.counter < self.limit:
             print(status.text)
             self.counter += 1
-            tweet = Tweet(name='test', user='@testusername', text=status.text)
+            tweet = Tweet(name=status.author.name, user=status.author.screen_name, text=status.text)
             tweet.save()
 
         else:

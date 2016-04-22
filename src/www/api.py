@@ -16,7 +16,6 @@ class StreamListener(tweepy.StreamListener):
             self.counter += 1
             tweet = Tweet(name=status.author.name, user=status.author.screen_name, text=status.text)
             tweet.save()
-
         else:
             return False
 
@@ -44,7 +43,7 @@ class Twitter(object):
         self.api = tweepy.API(self.api_auth)
         return self.api
 
-    def stream(self, topic):
+    def stream(self, topics, languages):
         self.auth()
         self.api_stream = tweepy.Stream(auth=self.api.auth, listener=StreamListener())
-        self.api_stream.filter(track=[topic])
+        self.api_stream.filter(track=topics, languages=languages)
